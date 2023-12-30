@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{ template "hello-node.fullname" . }}
   labels:
-    app: {{ template hello-node.name" . }}
+    app: {{ template "hello-node.name" . }}
     chart: {{ template "hello-node.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
